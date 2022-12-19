@@ -1,6 +1,6 @@
 # Kasir_UAP
-UAP PBO Diagram Class Kasir
+# UAP PBO Diagram Class Kasir
 
-Shafa Auliya
+Shafa Auliya 2117051042
 
-Iqbal Al Hafidzu Rahman
+Iqbal Al Hafidzu Rahman 2117051019
