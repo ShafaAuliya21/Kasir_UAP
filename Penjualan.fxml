@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C2CCFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uap_iqbal.PenjualanController">
+   <children>
+      <Label fx:id="lblNamaProduk" layoutX="66.0" layoutY="73.0" text="Nama produk      " />
+      <Label fx:id="lblHarga" layoutX="66.0" layoutY="112.0" text="Harga                " />
+      <Label fx:id="lblJumlah" layoutX="66.0" layoutY="152.0" prefHeight="17.0" prefWidth="80.0" text="Jumlah      " />
+      <TableView fx:id="tblView" layoutX="-1.0" layoutY="219.0" prefHeight="133.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tblNamaProduk" prefWidth="227.99999487400055" text="nama_produk" />
+          <TableColumn fx:id="tblHarga" prefWidth="196.66664123535156" text="harga" />
+            <TableColumn fx:id="tblJumlah" prefWidth="175.33334350585938" text="jumlah" />
+        </columns>
+      </TableView>
+      <TextField layoutX="166.0" layoutY="69.0" prefHeight="26.0" prefWidth="154.0" />
+      <TextField layoutX="166.0" layoutY="108.0" prefHeight="26.0" prefWidth="154.0" />
+      <TextField layoutX="166.0" layoutY="148.0" prefHeight="26.0" prefWidth="154.0" />
+      <Button fx:id="btnHapus" layoutX="402.0" layoutY="360.0" mnemonicParsing="false" onAction="#toDelete" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #122239;" text="Hapus" textFill="WHITE" />
+      <Button fx:id="btn_InputBack" layoutX="476.0" layoutY="360.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #122239;" text="Back" textFill="#f8f8f8" />
+      <Button fx:id="btnMakanan" layoutX="391.0" layoutY="121.0" mnemonicParsing="false" onAction="#toMakanan" style="-fx-background-color: #FFFFFF;" text="Makanan">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnBarang" layoutX="487.0" layoutY="121.0" mnemonicParsing="false" onAction="#toBarang" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: #FFFFFF;" text="Barang">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="375.0" layoutY="77.0" prefHeight="26.0" prefWidth="190.0" text="Pilih Salah Satu" textFill="#eb0e0e">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

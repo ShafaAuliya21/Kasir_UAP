@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C2CCFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uap_iqbal.KategoriController">
+   <children>
+      <Button fx:id="btnBarang" layoutX="229.0" layoutY="283.0" mnemonicParsing="false" onAction="#toBarang" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: #FFFFFF;" text="Barang" />
+      <Button fx:id="btnMakanan" layoutX="338.0" layoutY="283.0" mnemonicParsing="false" onAction="#toMakanan" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: #FFFFFF;" text="Makanan" />
+      <Label layoutX="246.0" layoutY="235.0" text="Pilih Kategori" textFill="#eb1010">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbView" prefHeight="218.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tblNamaProduk" prefWidth="283.3332824707031" text="nama_produk" />
+          <TableColumn fx:id="tblHarga" prefWidth="315.33331298828125" text="harga" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_InputBack" layoutX="501.0" layoutY="347.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #122239;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>
